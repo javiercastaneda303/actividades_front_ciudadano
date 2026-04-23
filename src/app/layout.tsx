@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 import { Providers } from '@/lib/providers';
 import { AppShell } from '@/components/layout/AppShell';
 import './globals.css';

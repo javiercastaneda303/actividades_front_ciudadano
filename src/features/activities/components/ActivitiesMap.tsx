@@ -9,7 +9,6 @@ import type { Activity } from '@/types/api';
 import { formatDateShort } from '@/lib/i18n';
 
 // Fix default marker icons path (Next.js bundler)
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 delete (L.Icon.Default.prototype as any)._getIconUrl;
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',

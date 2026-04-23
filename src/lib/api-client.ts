@@ -1,4 +1,4 @@
-import axios, { AxiosError, AxiosInstance } from 'axios';
+import axios, { type AxiosError, type AxiosInstance } from 'axios';
 import { env } from './env';
 
 const TOKEN_KEY = 'fiestas.citizen.token';

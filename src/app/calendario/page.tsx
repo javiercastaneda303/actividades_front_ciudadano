@@ -41,7 +41,7 @@ export default function CalendarioPage() {
     ...(categoryId && { categoryId }),
   });
 
-  const items = data?.items ?? [];
+  const items = useMemo(() => data?.items ?? [], [data?.items]);
   const availablePlaces = useMemo(() => {
     const m = new Map<string, Place>();
     for (const a of items) m.set(a.placeId, a.place);

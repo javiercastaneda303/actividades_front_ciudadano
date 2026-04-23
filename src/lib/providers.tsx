@@ -5,7 +5,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { AntdRegistry } from '@ant-design/nextjs-registry';
 import { App as AntdApp, ConfigProvider } from 'antd';
 import esES from 'antd/locale/es_ES';
-import { ReactNode, useState } from 'react';
+import { useState, type ReactNode } from 'react';
 
 const theme = {
   token: {

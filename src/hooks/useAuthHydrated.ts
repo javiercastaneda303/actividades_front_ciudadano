@@ -1,16 +1,13 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useSyncExternalStore } from 'react';
 import { useAuthStore } from '@/store/auth.store';
 
+const subscribe = (callback: () => void) =>
+  useAuthStore.persist.onFinishHydration(callback);
+const getSnapshot = () => useAuthStore.persist.hasHydrated();
+const getServerSnapshot = () => false;
+
 export function useAuthHydrated(): boolean {
-  const [hydrated, setHydrated] = useState(() => useAuthStore.persist.hasHydrated());
-
-  useEffect(() => {
-    const unsubFinish = useAuthStore.persist.onFinishHydration(() => setHydrated(true));
-    setHydrated(useAuthStore.persist.hasHydrated());
-    return unsubFinish;
-  }, []);
-
-  return hydrated;
+  return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 }
