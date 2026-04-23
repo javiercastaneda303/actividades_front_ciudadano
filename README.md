@@ -2,7 +2,7 @@
 
 Portal público para descubrir fiestas y actividades culturales en Barcelona.
 
-## Stack
+## Stack 
 
 - Next.js 15 (App Router) + React 19 + TypeScript
 - Tailwind CSS 3
