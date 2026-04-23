@@ -1,4 +1,4 @@
-# Ciudadano — Fiestas
+# Ciudadano — Actividades
 
 Next.js 15 (App Router) + TypeScript + Tailwind. Portal público para ciudadanos (rol `CITIZEN`, también navegable sin login según la ruta).
 
@@ -7,7 +7,7 @@ Next.js 15 (App Router) + TypeScript + Tailwind. Portal público para ciudadanos
 - Tailwind CSS 3
 - TanStack Query (server state) + Zustand (client/auth state)
 - React Hook Form + Zod (formularios y validación)
-- Axios (HTTP) hablando con `fiestas_backend` en `NEXT_PUBLIC_API_URL`
+- Axios (HTTP) hablando con `actividades_backend` en `NEXT_PUBLIC_API_URL`
 
 ## Puerto
 

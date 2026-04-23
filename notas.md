@@ -1,4 +1,4 @@
-web de fiestas:
+web de actividades:
 ciudadano
 mapa
 calendario  fecha y hora  duración

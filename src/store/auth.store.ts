@@ -24,6 +24,6 @@ export const useAuthStore = create<AuthState>()(
         set({ user: null, isAuthenticated: false });
       },
     }),
-    { name: 'fiestas.citizen.auth', partialize: (s) => ({ user: s.user, isAuthenticated: s.isAuthenticated }) },
+    { name: 'actividades.citizen.auth', partialize: (s) => ({ user: s.user, isAuthenticated: s.isAuthenticated }) },
   ),
 );

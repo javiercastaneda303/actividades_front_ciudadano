@@ -1,6 +1,6 @@
-# Fiestas — Ciudadano
+# Actividades — Ciudadano
 
-Portal público para descubrir fiestas y actividades culturales en Barcelona.
+Portal público para descubrir actividades y actividades culturales en Barcelona.
 
 ## Stack 
 
@@ -15,7 +15,7 @@ Portal público para descubrir fiestas y actividades culturales en Barcelona.
 ## Requisitos
 
 - Node.js ≥ 20
-- Backend corriendo en `http://localhost:3004` (ver `../fiestas_backend`)
+- Backend corriendo en `http://localhost:3004` (ver `../actividades_backend`)
 
 ## Setup
 
@@ -30,18 +30,18 @@ npm run dev                # http://localhost:3003
 | Variable | Default | Notas |
 |---|---|---|
 | `NEXT_PUBLIC_API_URL` | `http://localhost:3004/api/v1` | Base del backend |
-| `NEXT_PUBLIC_APP_NAME` | `Fiestas` | |
+| `NEXT_PUBLIC_APP_NAME` | `Actividades` | |
 
 ## Rutas
 
 | Ruta | Descripción | Auth |
 |---|---|---|
-| `/` | Home con próximas actividades y fiestas | Público |
+| `/` | Home con próximas actividades y actividades | Público |
 | `/mapa` | Mapa Leaflet con marcadores agrupados por lugar | Público |
 | `/calendario` | Vista mes filtrable por categoría | Público |
 | `/actividades` | Listado filtrable con búsqueda | Público |
 | `/actividades/[id]` | Detalle de actividad | Público |
-| `/festivales` | Listado de fiestas próximas | Público |
+| `/festivales` | Listado de actividades próximas | Público |
 | `/festivales/[slug]` | Detalle de fiesta con sus actividades | Público |
 | `/login` · `/registro` | Autenticación | Público |
 | `/cuenta` | Datos del usuario | Autenticado |

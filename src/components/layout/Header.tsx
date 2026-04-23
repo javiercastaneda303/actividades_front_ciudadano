@@ -50,7 +50,7 @@ export function Header() {
       >
         <Link href="/" style={{ marginRight: 16 }}>
           <Typography.Text strong style={{ color: '#16a34a', fontSize: 18 }}>
-            Fiestas
+            Actividades
           </Typography.Text>
         </Link>
 

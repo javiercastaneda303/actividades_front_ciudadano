@@ -2,7 +2,7 @@ import { z } from 'zod';
 
 const schema = z.object({
   NEXT_PUBLIC_API_URL: z.string().url(),
-  NEXT_PUBLIC_APP_NAME: z.string().default('Fiestas'),
+  NEXT_PUBLIC_APP_NAME: z.string().default('Actividades'),
 });
 
 export const env = schema.parse({

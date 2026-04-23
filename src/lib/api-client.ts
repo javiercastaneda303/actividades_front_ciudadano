@@ -1,7 +1,7 @@
 import axios, { type AxiosError, type AxiosInstance } from 'axios';
 import { env } from './env';
 
-const TOKEN_KEY = 'fiestas.citizen.token';
+const TOKEN_KEY = 'actividades.citizen.token';
 
 export const tokenStorage = {
   get: (): string | null =>

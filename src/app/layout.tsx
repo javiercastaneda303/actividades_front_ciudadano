@@ -5,7 +5,7 @@ import { AppShell } from '@/components/layout/AppShell';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: { default: 'Fiestas La Frontera', template: '%s · Fiestas' },
+  title: { default: 'Actividades La Frontera', template: '%s · Actividades' },
   description: 'Portal ciudadano de eventos y actividades de La Frontera (El Hierro)',
 };
 
