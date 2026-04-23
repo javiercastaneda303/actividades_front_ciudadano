@@ -2,7 +2,9 @@
 
 Portal público para descubrir actividades y actividades culturales en Barcelona.
 
-## Stack 
+> Vista global de la plataforma (backend + ambos fronts, puertos, auth, modelo de datos): [`../actividades_backend/docs/architecture.md`](../actividades_backend/docs/architecture.md).
+
+## Stack
 
 - Next.js 15 (App Router) + React 19 + TypeScript
 - Tailwind CSS 3
@@ -27,25 +29,25 @@ npm run dev                # http://localhost:3003
 
 ## Variables de entorno
 
-| Variable | Default | Notas |
-|---|---|---|
-| `NEXT_PUBLIC_API_URL` | `http://localhost:3004/api/v1` | Base del backend |
-| `NEXT_PUBLIC_APP_NAME` | `Actividades` | |
+| Variable               | Default                        | Notas            |
+| ---------------------- | ------------------------------ | ---------------- |
+| `NEXT_PUBLIC_API_URL`  | `http://localhost:3004/api/v1` | Base del backend |
+| `NEXT_PUBLIC_APP_NAME` | `Actividades`                  |                  |
 
 ## Rutas
 
-| Ruta | Descripción | Auth |
-|---|---|---|
-| `/` | Home con próximas actividades y actividades | Público |
-| `/mapa` | Mapa Leaflet con marcadores agrupados por lugar | Público |
-| `/calendario` | Vista mes filtrable por categoría | Público |
-| `/actividades` | Listado filtrable con búsqueda | Público |
-| `/actividades/[id]` | Detalle de actividad | Público |
-| `/festivales` | Listado de actividades próximas | Público |
-| `/festivales/[slug]` | Detalle de fiesta con sus actividades | Público |
-| `/login` · `/registro` | Autenticación | Público |
-| `/cuenta` | Datos del usuario | Autenticado |
-| `/cuenta/suscripciones` | Gestión de suscripciones por categoría | Autenticado |
+| Ruta                    | Descripción                                     | Auth        |
+| ----------------------- | ----------------------------------------------- | ----------- |
+| `/`                     | Home con próximas actividades y actividades     | Público     |
+| `/mapa`                 | Mapa Leaflet con marcadores agrupados por lugar | Público     |
+| `/calendario`           | Vista mes filtrable por categoría               | Público     |
+| `/actividades`          | Listado filtrable con búsqueda                  | Público     |
+| `/actividades/[id]`     | Detalle de actividad                            | Público     |
+| `/festivales`           | Listado de actividades próximas                 | Público     |
+| `/festivales/[slug]`    | Detalle de fiesta con sus actividades           | Público     |
+| `/login` · `/registro`  | Autenticación                                   | Público     |
+| `/cuenta`               | Datos del usuario                               | Autenticado |
+| `/cuenta/suscripciones` | Gestión de suscripciones por categoría          | Autenticado |
 
 ## Suscripciones y notificaciones
 
