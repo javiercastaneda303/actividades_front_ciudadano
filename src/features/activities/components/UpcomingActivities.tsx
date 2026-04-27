@@ -15,15 +15,20 @@ interface Props {
   stickyTop?: number;
 }
 
+// Fecha base para "proximas": se supone que "hoy" es el 1 de abril del anyo
+// en curso (no la fecha real del sistema). Asi el listado muestra todas las
+// actividades programadas a partir del 1 abril, no solo las posteriores a hoy.
+const upcomingFromIso = (): string => `${dayjs().year()}-04-01T00:00:00+01:00`;
+
 export function UpcomingActivities({
   title = 'Próximas',
-  limit = 10,
+  limit = 100,
   categoryId,
   placeId,
   stickyTop,
 }: Props) {
   const { data, isLoading } = useActivities({
-    upcoming: true,
+    from: upcomingFromIso(),
     pageSize: limit,
     ...(categoryId && { categoryId }),
     ...(placeId && { placeId }),
