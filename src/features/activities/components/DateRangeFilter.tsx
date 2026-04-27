@@ -7,10 +7,14 @@ const { RangePicker } = DatePicker;
 
 export const MAX_RANGE_DAYS = 60;
 
-export const defaultRange = (): [Dayjs, Dayjs] => [
-  dayjs().startOf('day'),
-  dayjs().add(30, 'day').endOf('day'),
-];
+// Por defecto: del 1 al 30 de abril del anyo en curso.
+export const defaultRange = (): [Dayjs, Dayjs] => {
+  const year = dayjs().year();
+  return [
+    dayjs(`${year}-04-01`).startOf('day'),
+    dayjs(`${year}-04-30`).endOf('day'),
+  ];
+};
 
 interface Props {
   value: [Dayjs, Dayjs];
